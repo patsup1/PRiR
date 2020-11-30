@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <sys/types.h> 
+#include <unistd.h> 
+#include <time.h>
 
 float Pi(int n)
 {
