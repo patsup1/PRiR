@@ -40,7 +40,7 @@ int main(int argc, char **argv)
     if(rank != size-1)
     {
         MPI_Status status;
-        int nadawca = rank+1;
+        int nadawca = rank-1;
         MPI_Recv(&odebrana_wartosc, 1, MPI_FLOAT, nadawca, TAG, MPI_COMM_WORLD, &status);
         printf("Proces %d odebral wartosc: %f\n", rank, odebrana_wartosc);
     }
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 
     if(rank != 0)
     {
-        int adresat = rank - 1;
+        int adresat = rank + 1;
         MPI_Send(&aktualna_wartosc, 1, MPI_FLOAT, adresat, TAG, MPI_COMM_WORLD);
         printf("Proces %d wyslal wartosc: %f\n", rank, aktualna_wartosc);
     }
