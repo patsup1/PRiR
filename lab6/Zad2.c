@@ -7,20 +7,20 @@ float f(float x)
     return x*x;
 }
 
-float Trapez(int a, int b, int numer, int wszystkie)
+float Trapez(int a, int b, int rank, int size)
 {
-    float dx = (b-a) / (float)wszystkie;
-    if(numer == wszystkie-1)
+    float dx = (b-a) / (float)size;
+    if(rank == size-1)
     {
         return f(b) / 2 * dx;        
     }
-    else if (numer == 0)
+    else if (rank == 0)
     {
         return f(a) / 2 * dx;
     }
     else
     {
-        return f(a + dx * numer) * dx;
+        return f(a + dx * rank) * dx;
     }
     
 }
