@@ -24,4 +24,16 @@ W main zaczynamy od deklaracji naszego pola do gry oraz potrzebnych zmiennych
     int j;
     int iteracje = 0;
     
-    
+W zależności od parametru argc przypisujemy wartość zmiennej suma_iteracji
+        if (argc == 1)
+    {
+        suma_iteracji = DOMYSLNE_ITERACJE;
+    }
+    else if (argc == 2)
+    {
+        suma_iteracji = atoi(argv[1]);
+    }
+    else
+    {
+        exit(1);
+    }
