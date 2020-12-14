@@ -1,6 +1,6 @@
 W main zaczynamy od deklaracji naszego pola do gry oraz potrzebnych zmiennych
 
-int wzor_siatki[256] =
+        int wzor_siatki[256] =
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
