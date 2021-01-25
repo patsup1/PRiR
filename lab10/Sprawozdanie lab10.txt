@@ -1,0 +1,8 @@
+Zad1
+W zadaniu pierwszym wykorzystałem funkcje napisane już wcześniej. Środowisko tensorflow pozwoliło w łatwy sposób zmienić jednostki obliczające z CPU na GPU i odwrotnie.
+
+Zad2
+W środowisko tensorflow wykorzystałem pakiet keras aby stworzyć program do interpolacji funkcji.
+
+Zad3.
+Przy pomocy keras w środowisku tensorflow stworzyłem program, który rozpoznaje część ubioru oraz wypisuje jej nazwę  na ekran
