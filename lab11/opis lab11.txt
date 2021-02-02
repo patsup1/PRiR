@@ -1,0 +1,17 @@
+Zmienione zostały zdjęcia:
+base_image_path = keras.utils.get_file("kot.jpg", "https://i.imgur.com/XJ7EtBg.jpeg")
+style_reference_image_path = keras.utils.get_file(
+    "obraz.jpg", "https://i.imgur.com/k1vu4Ev.jpeg")
+
+ilość iteracji:
+iterations = 5000
+
+oraz krok rozpadu:
+optimizer = keras.optimizers.SGD(
+    keras.optimizers.schedules.ExponentialDecay(
+        initial_learning_rate=100.0, decay_steps=130, decay_rate=0.96
+    )
+)
+
+Źródło: https://keras.io/examples/generative/neural_style_transfer/
+
