@@ -128,7 +128,7 @@ def compute_loss_and_grads(combination_image, base_image, style_reference_image)
 
 optimizer = keras.optimizers.SGD(
     keras.optimizers.schedules.ExponentialDecay(
-        initial_learning_rate=80.0, decay_steps=110, decay_rate=0.96
+        initial_learning_rate=100.0, decay_steps=130, decay_rate=0.96
     )
 )
 
